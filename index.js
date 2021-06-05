@@ -22,8 +22,16 @@ function check() {
         console.log("");
       });
       var n = html.indexOf("zondag 6 juni");
+      var a = html.indexOf("Morgen");
+      var d = html.indexOf("morgen");
       setTimeout(() => {
         if (n > 0) {
+          console.log("test");
+          tellme(true);
+        } else if (a > 0) {
+          console.log("test");
+          tellme(true);
+        } else if (d > 0) {
           console.log("test");
           tellme(true);
         } else {
